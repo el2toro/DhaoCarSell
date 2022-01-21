@@ -1,0 +1,114 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<CarSellApp.Models.Car>
+
+@inject IViewLocalizer Localizer
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Cars</title>
+</head>
+
+<br />
+<br />
+
+<body>
+<p style="margin:20px; padding: 20px">
+    <a asp-action="Create">@Localizer["CreateNew"]</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+             <th>
+                @Localizer["Image"]
+            </th>
+
+            <th>
+                @Localizer["Make"]
+            </th>
+            <th>
+                @Localizer["Model"]
+            </th>
+            <th>
+                @Localizer["Year"]
+            </th>
+            <th>
+                @Localizer["Power"]
+            </th>
+            <th>
+                @Localizer["CmCube"]
+            </th>
+            <th>
+                @Localizer["Mileage"]
+            </th>
+            <th>
+                @Localizer["Fuel"]
+            </th>
+            <th>
+                @Localizer["Body"]
+            </th>
+            <th>
+                @Localizer["Description"]
+            </th>        
+            <th>
+                @Localizer["Price"]
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+             <td>
+                 <img src="~/assets/images/@Html.DisplayFor(modelItem => item.Image)" alt="" style="width: 100px; height: 100px">
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CmCube)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Km)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fuel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+           
+            <td>
+                € @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@Localizer["Edit"]</a> |
+                <a asp-action="CarDetails" asp-route-id="@item.Id" asp-controller="Home">@Localizer["Details"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@Localizer["Delete"]</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>
