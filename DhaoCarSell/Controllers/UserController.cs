@@ -9,5 +9,10 @@ namespace DhaoCarSell.Controllers
         {
             return View();
         }
+
+        public IActionResult GetAll()
+        {
+            return View();
+        }
     }
 }
