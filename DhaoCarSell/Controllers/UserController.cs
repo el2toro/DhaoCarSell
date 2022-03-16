@@ -22,7 +22,7 @@ namespace DhaoCarSell.Controllers
 
         public IActionResult GetUserById()
         {
-            return View();
+            return View("hgjfdh");
         }
     }
 }
