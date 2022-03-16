@@ -9798,19 +9798,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Desktop\\DhaoCarSell\\DhaoCarSell\\DhaoCarSell.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\repo\\DhaoCarSell\\DhaoCarSell.csproj",
       "projectName": "DhaoCarSell",
-      "projectPath": "C:\\Users\\pc\\Desktop\\DhaoCarSell\\DhaoCarSell\\DhaoCarSell.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Desktop\\DhaoCarSell\\DhaoCarSell\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Desktop\\repo\\DhaoCarSell\\DhaoCarSell.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Desktop\\repo\\DhaoCarSell\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
