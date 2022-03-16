@@ -5,6 +5,9 @@ namespace DhaoCarSell.Controllers
 {
     public class UserController : Controller
     {
-
+        public IActionResult GetUser()
+        {
+            return View();
+        }
     }
 }
