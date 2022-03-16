@@ -9,5 +9,10 @@ namespace DhaoCarSell.Controllers
         {
             return View();
         }
+
+        public IActionResult GetUserById()
+        {
+            return View();
+        }
     }
 }
