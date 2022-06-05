@@ -1,13 +1,9 @@
-﻿using CarSellApp.Models;
-using DhaoCarSell.Data;
+﻿using DhaoCarSell.Data;
+using DhaoCarSell.Models;
 using DhaoCarSell.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Localization;
-using System;
-using System.Collections.Generic;
+
 
 namespace DhaoCarSell.Controllers
 {

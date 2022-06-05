@@ -1,11 +1,7 @@
-﻿using DhaoCarSell.Areas.Identity.Pages.Account;
-using DhaoCarSell.Services;
+﻿using DhaoCarSell.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Localization;
-using Microsoft.Extensions.Localization;
-using Microsoft.Extensions.Logging;
-using System;
+
 
 namespace DhaoCarSell.Controllers
 {

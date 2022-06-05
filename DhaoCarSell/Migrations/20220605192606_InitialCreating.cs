@@ -15,16 +15,16 @@ namespace DhaoCarSell.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Make = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    Model = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    Make = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Model = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Year = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Power = table.Column<int>(type: "int", nullable: false),
                     CmCube = table.Column<int>(type: "int", nullable: false),
                     Km = table.Column<int>(type: "int", nullable: false),
                     Fuel = table.Column<int>(type: "int", nullable: false),
                     Body = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Image = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -38,13 +38,13 @@ namespace DhaoCarSell.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(type: "nvarchar(200)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(200)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    Country = table.Column<string>(type: "nvarchar(150)", nullable: false),
-                    City = table.Column<string>(type: "nvarchar(100)", nullable: false),
-                    Street = table.Column<string>(type: "nvarchar(200)", nullable: false),
-                    PosteCode = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Street = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PosteCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CarRef = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

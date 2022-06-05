@@ -1,8 +1,6 @@
-﻿using CarSellApp.Models;
-using DhaoCarSell.Services;
+﻿using DhaoCarSell.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using System.IO;
+
 
 namespace DhaoCarSell.Data
 {
@@ -23,13 +21,13 @@ namespace DhaoCarSell.Data
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {          
-            
+        {
+
             modelBuilder.Entity<Car>()
                 .HasOne(c => c.Contact)
                 .WithOne(c => c.Car)
-                .HasForeignKey<Contact>(c => c.CarRef);   
-                
+                .HasForeignKey<Contact>(c => c.CarRef);
+
         }
 
         public DbSet<Car> Car { get; set; }
