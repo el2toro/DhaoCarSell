@@ -17,12 +17,12 @@ namespace DhaoCarSell.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("ProductVersion", "6.0.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("CarSellApp.Models.Car", b =>
+            modelBuilder.Entity("DhaoCarSell.Models.Car", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,7 +72,7 @@ namespace DhaoCarSell.Migrations
                     b.ToTable("Car");
                 });
 
-            modelBuilder.Entity("CarSellApp.Models.Contact", b =>
+            modelBuilder.Entity("DhaoCarSell.Models.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -119,18 +119,18 @@ namespace DhaoCarSell.Migrations
                     b.ToTable("Contact");
                 });
 
-            modelBuilder.Entity("CarSellApp.Models.Contact", b =>
+            modelBuilder.Entity("DhaoCarSell.Models.Contact", b =>
                 {
-                    b.HasOne("CarSellApp.Models.Car", "Car")
+                    b.HasOne("DhaoCarSell.Models.Car", "Car")
                         .WithOne("Contact")
-                        .HasForeignKey("CarSellApp.Models.Contact", "CarRef")
+                        .HasForeignKey("DhaoCarSell.Models.Contact", "CarRef")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Car");
                 });
 
-            modelBuilder.Entity("CarSellApp.Models.Car", b =>
+            modelBuilder.Entity("DhaoCarSell.Models.Car", b =>
                 {
                     b.Navigation("Contact")
                         .IsRequired();

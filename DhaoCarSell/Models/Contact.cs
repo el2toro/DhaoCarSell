@@ -1,6 +1,4 @@
-﻿
-
-namespace CarSellApp.Models
+﻿namespace DhaoCarSell.Models
 {
     public class Contact
     {
