@@ -31,5 +31,19 @@ pipeline {
             }
         }
 
-     }
+        post{
+
+            always{
+                echo("I will run always!!!")
+            }
+
+            succes{
+                echo("I will run succesfull!!!")
+            }
+
+            failure{
+                echo("I will run when fails!!!")
+            }
+        }
+    }
 }
