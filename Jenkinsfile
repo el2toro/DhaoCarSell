@@ -2,19 +2,16 @@ pipeline {
 
     agent any
 
-    stages{
+     stages{
 
-        stage("Build"){
+      stage("Build"){
 
             steps{
 
-              echo("Test")
-
+              echo("Build")
+              
             }
         }
-    }
-
-     stages{
 
         stage("Test"){
 
@@ -24,17 +21,15 @@ pipeline {
               
             }
         }
-    }
-
-     stages{
 
         stage("Integration Test"){
 
             steps{
 
               echo("Integration Test")
-              
+
             }
         }
-    }
+
+     }
 }
