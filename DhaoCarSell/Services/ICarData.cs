@@ -1,5 +1,4 @@
-﻿using CarSellApp.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace DhaoCarSell.Services
 {
